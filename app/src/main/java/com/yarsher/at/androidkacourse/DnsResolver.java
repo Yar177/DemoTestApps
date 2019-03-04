@@ -16,8 +16,6 @@ public class DnsResolver implements Runnable{
         this.domain = domain;
     }
 
-
-
     @Override
     public void run() {
         try {
@@ -32,6 +30,10 @@ public class DnsResolver implements Runnable{
 
     private void set(InetAddress address) {
         this.inetAddr = inetAddr;
+    }
+
+    public synchronized InetAddress get() {
+        return inetAddr;
     }
 
 
