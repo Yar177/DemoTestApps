@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("NetworkSecurityPolicy.getInstance().isCleartextTrafficPermitted(): " + ctOn);
        }
 
-       testDNS("www.google.com", 5000);
+       testDNS("www.google.com", 500000);
     }//end onCreate
 
 
